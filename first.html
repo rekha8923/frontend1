@@ -1,0 +1,373 @@
+OCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            position: relative;
+            /* opacity: 0.5; */
+        }
+        .header{
+            height: 60px;
+            display: flex;
+            justify-content:space-between ;
+            position: fixed;
+            top: 0;
+            background-color: white;
+            width: 100%;
+            z-index: 99;
+           }
+        .content1{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 5px;
+            padding: 15px;
+            }
+        .content2{
+            display: flex;
+            list-style-type: none;
+        }
+        li{
+            margin: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .image{
+            position: relative;
+        }
+        .imgs{
+            /* border: 3px solid red; */
+            position: absolute;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            top: 325px;
+
+        }
+        .img-con1{
+            color: white;
+            background-color: black;
+            padding: 10px;
+            font-weight: 900;
+            font-size: 40px;
+        }
+        .img-con2{
+            color: white;
+            font-size: 40px;
+            margin: 5px;
+            /* padding: 10px; */
+            font-family: system-ui;
+        }
+        .project{
+            font-size: 25px;
+            font-family: sans-serif;
+            margin-top: 55px;
+            margin-left: 40px;
+            margin-bottom: 55px;
+        }
+        .picture{
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
+        }
+        .picture .pictureimge{
+            width: 290px;
+            position: relative;
+            /* line-height:2; */
+            margin-top: 20px;
+            
+            
+        }
+        .pictureimge img{
+            width: 100%;
+           
+        }
+        .pictureimge .con{
+            position: absolute;
+            top: 0px;
+            background-color: black;
+            color: white;
+            /* padding-left: 15px; */
+            /* padding-right: 15px; */
+            font-family: sans-serif;
+            padding: 10px;
+        }
+        .text{
+            font-size: 25px;
+            font-family: sans-serif;
+            margin-top: 55px;
+            margin-left: 40px;
+            margin-bottom: 35px;
+            
+        }
+        .text2{
+            font-size: 17px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 40px;
+            margin-bottom: 50px;
+            text-align: justify;
+            margin-right: 40px;
+            
+        }
+        .main{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
+        }
+       .pic{
+            width: 270px;
+            margin-top: 20px;
+            
+        }
+        .pic img{
+            width: 100%;
+            
+        }
+        .te{
+            display: flex;
+        }
+        .t{
+            /* height: 100%;
+            width: 100%; */
+            /* border: 2px solid black; */
+           
+            justify-content: space-between;
+            font-size:24px ;
+            /* margin: 17px; */
+           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .t span{
+            font-size: 17px;
+            color: gray;
+           
+        }
+        .para{
+            font-size: 17px;
+            margin-top: 20px;
+        }
+        .contact{
+            font-size: 17px;
+            background-color: rgb(234, 233, 233);
+            padding: 8px;
+            text-align: center;
+            margin-top: 18px;
+        }
+        .contact:hover{
+               background-color: #ccc;
+        }
+        .cont{
+            font-size: 25px;
+            font-family: sans-serif;
+            margin-top: 55px;
+            margin-left: 40px;
+            margin-bottom: 35px;
+        }
+        .line{
+            font-size: 18px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 22px;
+            margin-bottom: 10px;
+        }
+        .form{
+            width: 97.5%;
+            padding: 10px;
+            border:1px solid rgb(216, 212, 212);
+            /* margin-left: 1px ; */
+            margin: 1px;
+            
+            font-size: 17px;
+            color: gray;
+        }
+        button{
+            background-color: black;
+            color: white;
+            padding: 10px 18px;
+            margin-bottom: 50px;
+            margin-top: 20px;
+            font-size: 15px;
+
+        }
+        .footer{
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer p{
+            color: white;
+            font-size: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .img-con1{
+            /* background-color: red; */
+            opacity: 0.55;
+        }
+        .bpic{
+            /* border: 3px solid red; */
+            width: 270px;
+            .t{
+                /* width:270px; */
+                width: 100%;
+                border: 3px solid green;
+            }
+        }
+       .image .pimg{
+            position: relative;
+           
+        }
+        .image  .imgs{
+                /* border: 2px solid red; */
+                position: absolute;
+                top:45%;
+            }
+    </style>
+</head>
+<body>
+   
+    <div class="image">
+      
+        <div class="header">
+            <div class="content1"><b>B R</b> <span style="margin: 10px;">Architects</span> </div>
+            <div class="content2">
+                <li>Projects</li>
+                <li>About</li>
+                <li>Contact</li>
+            </div>
+        </div>
+
+        <img src="https://www.w3schools.com/w3images/architect.jpg" alt=""  width="100%" class="pimg">
+        <div class="imgs">
+            <div class="img-con1">B R</div>
+            <div class="img-con2">Architects</div>
+        </div>
+       </div>
+       <div class="project">Projects</div>
+       <div class="picture">
+        <div class="pictureimge">
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <div class="con">
+                 <p>Summer House</p>
+            </div>
+        </div>
+        <div class="pictureimge">
+            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+            <div class="con">
+                <p>Brick House</p>
+           </div>
+        </div>
+        <div class="pictureimge">
+            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+            <div class="con">
+                <p>Renovated</p>
+           </div>
+        </div>
+        <div class="pictureimge">
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+            <div class="con">
+                <p>Barn House</p>
+           </div>
+        </div>
+        <div class="pictureimge">
+            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+            <div class="con">
+                <p>Summer House</p>
+           </div>
+        </div>
+        <div class="pictureimge">
+            <img src="https://w3schools.com/w3images/house5.jpg" alt="">
+            <div class="con">
+                <p>Brick House</p>
+           </div>
+        </div>
+        <div class="pictureimge">
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+            <div class="con">
+                <p>Renovated</p>
+           </div>
+        </div>
+        <div class="pictureimge">
+            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+            <div class="con">
+                <p>Barn House</p>
+           </div>
+        </div>
+        
+       </div>
+       <div class="text"><p>About</p></div>
+       <div class="text2"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam aperiam reiciendis laudantium obcaecati et atque recusandae. Consectetur obcaecati minus inventore itaque aliquam quibusdam aliquid libero asperiores dignissimos numquam animi nesciunt, qui iure. Ab magnam architecto et asperiores, minima quidem fugiat libero natus reprehenderit animi voluptate! Nemo rerum reiciendis necessitatibus magnam!</p>
+       </div>
+       <div class="main">
+        <div class="bpic">
+       <div class="pic">
+       <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+       </div>
+       <div class="t">
+        John Deo
+        <div><span>CEO & Founder</span></div>
+        <div class="para">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum</div>
+        <div class="contact chover">Contact</div>
+       </div>
+    </div>
+    <div class="bpic">
+       <div class="pic">
+        <img src="https://www.w3schools.com/w3images/team1.jpg" alt="">
+       </div>
+       <div class="t">Jane Doe
+        <div><span>Architect</span></div>
+        <div class="para">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum</div>
+        <div class="contact">Contact</div>
+       </div>
+    </div>
+    <div class="bpic">
+       <div class="pic">
+        <img src="https://www.w3schools.com/w3images/team3.jpg" alt="">
+       </div>
+
+       <div class="t">Mike Ross
+        <div><span>Architect</span></div>
+        <div class="para">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum</div>
+        <div class="contact">Contact</div>
+       </div>
+    </div>
+    <div class="bpic">
+       <div class="pic">
+        <img src="https://www.w3schools.com/w3images/team4.jpg" alt="">
+       </div>
+       <div class="t">Dan Star
+        <div><span>Architect</span></div>
+        <div class="para">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum</div>
+        <div class="contact">Contact</div>
+       </div>
+       </div>
+    </div>
+    <div class="cont"><p>Contact</p>
+    <div class="line"><p>Lets get in touch and talk about your next project.</p></div>
+    <div style="line-height: 57px;">
+        <input type="text" value="Name" class="form">
+    <input type="text" value="Email" class="form">
+    <input type="text" value="Subject" class="form">
+    <input type="text" value="Comment" class="form">
+    <button>SEND MESSAGE</button>
+    </div>
+    
+    <div>
+        <img src="https://www.w3schools.com/w3images/map.jpg" alt="" width="97%">
+    </div>
+   
+</div>
+<div class="footer">
+<p>Powered by w3.css</p>
+</div>
+</body>
+</html>
